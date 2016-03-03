@@ -8,57 +8,48 @@ namespace pigDie
 {
     class Program
     {
-        static Random rnd = new Random(); 
+        static Random rnd = new Random();
         static void Main(string[] args)
         {
-            
-                //create a title player screen
-                Console.WriteLine("PigDICE!!!!");
-                Console.WriteLine("Press any button to Continue!");
-                DateTime present = DateTime.Now;
-                Console.WriteLine(present);
 
-                Console.ReadLine();
-                Console.Clear();
-                Console.WriteLine("['_']");
-                Console.WriteLine("rolling dice....");
-                Console.ReadLine();
+            //create a title player screen
+            Console.WriteLine("PigDICE!!!!");
+            Console.WriteLine("Press any button to Continue!");
+            DateTime present = DateTime.Now;
+            Console.WriteLine(present);
 
-                //create characters
-                //generate random numbers for dice
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("['_']");
+            Console.WriteLine("rolling dice....");
+            Console.ReadLine();
 
+            //create characters
+            //generate random numbers for die
+            while (true)
+            {
 
-
-
-
-
-
-
-
-                while (gameTotal < 100)
+                while (true)
                 {
-
-
                     int dice = rnd.Next(1, 7);
                     Console.WriteLine(dice);
 
-                    bool keepgoing = true;
-                    while (keepgoing)
 
-                        if (dice == 1)
-                        {
-                            Console.WriteLine("You rolled 1, Lost Turn");
-                            break;
+                    if (dice == 1)
+                    {
+                        Console.WriteLine("You rolled 1, Lost Turn");
 
-                        }
 
-                        else
-                        {
-                            Console.WriteLine($"You rolled {dice}. Your Total Score is Now");
-                            Console.WriteLine("8)");
-                            Console.WriteLine("press any key to continue...");
+                    }
 
-                        }
+                    else
+                    {
+                        Console.WriteLine($"You rolled {dice}. Your Total Score is Now");
+                        Console.WriteLine("8)");
+                        Console.WriteLine("press any key to continue...");
+
+                    }
+
 
                 }
             }
@@ -100,6 +91,5 @@ namespace pigDie
 
         }
     }
-}
-    }
+
 }
