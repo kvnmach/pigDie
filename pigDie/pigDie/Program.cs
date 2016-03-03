@@ -11,22 +11,15 @@ namespace pigDie
         static Random rnd = new Random();
         static void Main(string[] args)
         {
-
             //create a title player screen
-            Console.WriteLine("PigDICE!!!!");
-            Console.WriteLine("Press any button to Continue!");
-            DateTime present = DateTime.Now;
-            Console.WriteLine(present);
-
-            Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("['_']");
-            Console.WriteLine("rolling dice....");
-            Console.ReadLine();
+            TitlePage();
 
             //create characters
             //generate random numbers for die
-            while (true)
+            int turn = 0;
+            int game = 0;
+
+            while (game < 100)
             {
 
                 while (true)
@@ -37,14 +30,16 @@ namespace pigDie
 
                     if (dice == 1)
                     {
+                        turn = 0;
                         Console.WriteLine("You rolled 1, Lost Turn");
-
+                        break;
 
                     }
 
-                    else
+
                     {
-                        Console.WriteLine($"You rolled {dice}. Your Total Score is Now");
+                        turn += dice;
+                        Console.WriteLine($"You rolled {dice}. Your Total Score is {turn}");
                         Console.WriteLine("8)");
                         Console.WriteLine("press any key to continue...");
 
@@ -89,6 +84,20 @@ namespace pigDie
 
 
 
+        }
+
+        private static void TitlePage()
+        {
+            Console.WriteLine("PigDICE!!!!");
+            Console.WriteLine("Press any button to Continue!");
+            DateTime present = DateTime.Now;
+            Console.WriteLine(present);
+
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("['_']");
+            Console.WriteLine("rolling dice....");
+            Console.ReadLine();
         }
     }
 
