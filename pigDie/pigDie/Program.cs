@@ -8,6 +8,7 @@ namespace pigDie
 {
     class Program
     {
+        public static string Player { get; private set; } 
         static Random rnd = new Random();
         static void Main(string[] args)
         {
@@ -28,23 +29,27 @@ namespace pigDie
                     Console.WriteLine(dice);
 
 
-                    if (dice == 1)
+                if (dice == 1)
                     {
                         turn = 0;
-                        Console.WriteLine("You rolled 1, Lost Turn");
+                        Console.WriteLine($"You rolled {dice}, Lost Turn");
                         break;
-
                     }
-
-
+                
                     {
                         turn += dice;
                         Console.WriteLine($"You rolled {dice}. Your Total Score is {turn}");
-                        Console.WriteLine("8)");
-                        Console.WriteLine("press any key to continue...");
+                        
+                        Console.WriteLine("press ENTER key to continue...");
+                        var userInput = Console.ReadLine();
+                        if (userInput == "ENTER") ;
+                    }
+                    {
+                        break;
 
                     }
-
+                    turn += game;
+                       turn = 0;
 
                 }
             }
