@@ -8,7 +8,7 @@ namespace pigDie
 {
     class Program
     {
-        public static string Player { get; private set; } 
+        //public static string Player { get; private set; } 
         static Random rnd = new Random();
         static void Main(string[] args)
         {
@@ -21,40 +21,49 @@ namespace pigDie
             int game = 0;
 
             while (game < 100)
-            {
-
-                while (true)
-                {
-                    int dice = rnd.Next(1, 7);
-                    Console.WriteLine(dice);
-
-
-                if (dice == 1)
-                    {
-                        turn = 0;
-                        Console.WriteLine($"You rolled {dice}, Lost Turn");
-                        break;
-                    }
                 
+                {
+
+                    while (true)
+               
                     {
-                        turn += dice;
-                        Console.WriteLine($"You rolled {dice}. Your Total Score is {turn}");
+                            
+                        int dice = rnd.Next(1, 7);
+                        Console.WriteLine(dice);
+
+                            if (dice == 1)
+
+                                {
+                                    turn = 0;
+                                    Console.WriteLine($"You rolled {dice}, Lost Turn");
+                                  break;
+                                }
+
+                                {
+                                        game += dice;
+                                        Console.WriteLine($"You rolled {dice}. Your Total Score is {game}");
                         
-                        Console.WriteLine("press ENTER key to continue...");
-                        var userInput = Console.ReadLine();
-                        if (userInput == "ENTER") ;
-                    }
+                                        Console.WriteLine("press ENTER key to continue...");
+                                        var userInput = Console.ReadLine();
+                                        if (userInput == "r") 
+                                        continue;
+                                    }
+                  
+
+
+
+                    
+
                     {
-                        break;
+                        
 
                     }
-                    turn += game;
-                       turn = 0;
 
                 }
             }
 
-
+            Console.WriteLine("You Win!");
+            Console.ReadLine();
 
 
 
@@ -107,3 +116,5 @@ namespace pigDie
     }
 
 }
+
+
