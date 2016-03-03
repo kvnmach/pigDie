@@ -10,10 +10,17 @@ namespace BlackJack___
     {
         static void Main(string[] args)
         {
+            TitlePage();
+
+            //
+        }
+
+        private static void TitlePage()
+        {
             Console.WriteLine("Welcome to BlackJack!");
             Console.WriteLine("INSTRUCTIONS: Dealer STAYS on  16, Hit 21 You WIN!, Over 21 you LOSE!");
             Console.WriteLine("Press any key to continue");
-            Console.WriteLine( DateTime.Now);
+            Console.WriteLine(DateTime.Now);
             Console.ReadLine();
         }
     }
