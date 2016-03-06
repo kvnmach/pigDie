@@ -6,35 +6,9 @@ using System.Threading.Tasks;
 
 namespace BlackJack___
 {
-    class myDeck
+    class ArrayList
     {
-        
-
-    
-
-
+        ArrayList myValue = new ArrayList();
+            
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//switch//
-
-    
-

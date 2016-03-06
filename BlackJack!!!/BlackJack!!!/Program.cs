@@ -11,12 +11,17 @@ namespace BlackJack___
         static void Main(string[] args)
         {
             TitlePage();
-            int i = 21;
-            while (true)
-            {
-               
 
-                }
+            { 
+                
+                
+
+
+
+
+
+
+            }
                   
                     {
                     
