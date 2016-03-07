@@ -12,9 +12,11 @@ namespace BlackJack___
         {
             TitlePage();
 
-            { 
+            {
                 
-                
+
+
+
 
 
 
