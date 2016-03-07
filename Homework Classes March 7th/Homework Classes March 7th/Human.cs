@@ -10,7 +10,7 @@ namespace Homework_Classes_March_7th
 {
     public class Human
     {
-        
+        public bool IsASleep = true;
         
             
         
@@ -29,6 +29,16 @@ namespace Homework_Classes_March_7th
         {
 
             Console.WriteLine($"Yum i ate {food}");
+        }
+
+        public void GoToSleep()
+        {
+            Console.WriteLine("Go To Sleep");
+        }
+
+        public void WakeUp()
+        {
+            Console.WriteLine("Wake Up");
         }
 
     }

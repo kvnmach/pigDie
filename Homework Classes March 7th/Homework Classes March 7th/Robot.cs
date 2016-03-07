@@ -16,7 +16,7 @@ namespace Homework_Classes_March_7th
 
          public string ShutDown()
          {
-             return("Shutdown");
+             return "Shutdown";
          }
 
           public string DisplayName()
@@ -28,6 +28,10 @@ namespace Homework_Classes_March_7th
          {
              return "I'm a Robot";
          }
-         
-    }
+
+         bool isTerminator = true;
+
+         bool isASleep = false;
+
+     }
 }

@@ -8,7 +8,8 @@ namespace Homework_Classes_March_7th
 {
      class Panda
     
-    {   
+    {
+        public bool IsASleep = true;
         public string DisplayName()
         {
             return"Pandra";
