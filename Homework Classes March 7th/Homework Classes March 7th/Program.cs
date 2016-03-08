@@ -14,14 +14,23 @@ namespace Homework_Classes_March_7th
             Human aHuman = new Human();
             Robot bRobot = new Robot();
             Panda cPanda = new Panda();
-
+            //names
+            //greetings
             aHuman.DisplayName();
             bRobot.DisplayName();
             cPanda.DisplayName();
 
+            aHuman.DisplayGreeting();
+            bRobot.DisplayGreeting();
+            cPanda.DisplayGreeting();
 
+            //eat
             aHuman.Eat("Tacos");
             cPanda.Eat("Tacos");
+
+            //Sleep
+            aHuman.Asleep = true;
+            cPanda.Asleep = true;
             
 
 

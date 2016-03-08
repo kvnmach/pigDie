@@ -22,14 +22,14 @@ namespace Homework_Classes_March_7th
             return "Shutdown";
         }
 
-        public string DisplayName()
+        public void DisplayName()
         {
-            return ("Mr.Roboto");
+            Console.WriteLine("My Name is Mr.Roboto");
         }
 
-        public string DisplayGreeting()
+        public void DisplayGreeting()
         {
-            return "I'm a Robot";
+            Console.WriteLine("Hello from Robot");
         }
 
 

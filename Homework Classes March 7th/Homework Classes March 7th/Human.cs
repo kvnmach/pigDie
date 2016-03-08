@@ -20,7 +20,7 @@ namespace Homework_Classes_March_7th
 
         public void DisplayName()
         {
-            Console.WriteLine("Kevin");
+            Console.WriteLine("My Name isKevin");
         }
 
         public void DisplayGreeting()
