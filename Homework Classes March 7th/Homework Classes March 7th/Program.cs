@@ -31,15 +31,11 @@ namespace Homework_Classes_March_7th
             //Sleep
             aHuman.Asleep = true;
             cPanda.Asleep = true;
-            
 
-
-
-
-
-
-
-
+            //robot
+            bRobot.Terminator = true;
+            bRobot.StartUp();
+            bRobot.ShutDown();
 
             Console.ReadLine();
 
