@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Dynamic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,19 +12,20 @@ namespace Homework_Classes_March_7th
 {
     public class Human
     {
-        public bool IsASleep = true;
-        
-            
-        
 
-        public string DisplayName()
+        public string Name { get; set; }
+        public string food { get; set; }
+
+        public bool Asleep = false;
+
+        public void DisplayName()
         {
-            return "Kevin";
+            Console.WriteLine("Kevin");
         }
 
-        public string DisplayGreeting()
+        public void DisplayGreeting()
         {
-            return "Hello from Human";
+            Console.WriteLine ("Hello from Human");
         }
 
         public void Eat(string food)
@@ -33,13 +36,21 @@ namespace Homework_Classes_March_7th
 
         public void GoToSleep()
         {
-            Console.WriteLine("Go To Sleep");
+            Asleep = true;
         }
 
         public void WakeUp()
         {
-            Console.WriteLine("Wake Up");
+            Asleep = false;
         }
 
+        public void IsASleep()
+        {
+            if (Asleep)
+            {
+               Console.WriteLine($"{Name} is asleep");
+            }
+        }
+        
     }
 }

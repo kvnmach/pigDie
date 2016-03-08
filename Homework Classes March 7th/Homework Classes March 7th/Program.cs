@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +19,19 @@ namespace Homework_Classes_March_7th
             bRobot.DisplayName();
             cPanda.DisplayName();
 
-            bRobot.StartUp();
-            bRobot.ShutDown();
 
+            aHuman.Eat("Tacos");
+            cPanda.Eat("Tacos");
             
+
+
+
+
+
+
+
+
+
             Console.ReadLine();
 
 

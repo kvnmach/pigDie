@@ -17,7 +17,7 @@ namespace Homework_Classes_March_7th
 
         public string DisplayGreeting()
         {
-            return"Hello from China";
+            return"Hello from Zoo";
         }
 
          public void Eat(string food)
