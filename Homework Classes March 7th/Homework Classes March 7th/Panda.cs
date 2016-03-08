@@ -6,24 +6,46 @@ using System.Threading.Tasks;
 
 namespace Homework_Classes_March_7th
 {
-     class Panda
-    
+    class Panda 
+
     {
-        public bool IsASleep = true;
-        public string DisplayName()
+        public string Name { get; set; }
+
+        public bool Asleep = true;
+
+        public void DisplayName()
+
         {
-            return"Pandra";
+            Console.WriteLine("My name is Pandra");
         }
 
-        public string DisplayGreeting()
+        public void DisplayGreeting()
         {
-            return"Hello from Zoo";
+            Console.WriteLine("Hello From Zoo");
         }
 
-         public void Eat(string food)
-         {
-             Console.WriteLine($"Yum i ate {food}");
-         }
+        public void Eat(string food)
+        {
+            Console.WriteLine($"Yum i ate {food}");
+        }
 
+        public void GoToSLeep();
+        {
+            Asleep = true;
+        }
+
+        public void WakeUp();
+        {
+            Asleep = false;
+        }
+
+        public void IsAsleep()
+        {
+            if (Asleep)
+            {
+                Console.WriteLine($"Panda is asleep");
+            }
+        }
     }
+
 }

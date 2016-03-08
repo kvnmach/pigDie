@@ -9,7 +9,7 @@ namespace Homework_Classes_March_7th
 {
     public class Robot
     {
-        //public string DisplayName { get; set; }
+        
 
         public string StartUp()
         {
