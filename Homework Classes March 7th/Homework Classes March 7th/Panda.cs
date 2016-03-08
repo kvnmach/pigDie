@@ -10,6 +10,7 @@ namespace Homework_Classes_March_7th
 
     {
         public string Name { get; set; }
+        public string food { get; set; }
 
         public bool Asleep = true;
 
@@ -29,12 +30,12 @@ namespace Homework_Classes_March_7th
             Console.WriteLine($"Yum i ate {food}");
         }
 
-        public void GoToSLeep();
+        public void GoToSLeep()
         {
             Asleep = true;
         }
 
-        public void WakeUp();
+        public void WakeUp()
         {
             Asleep = false;
         }
@@ -43,7 +44,7 @@ namespace Homework_Classes_March_7th
         {
             if (Asleep)
             {
-                Console.WriteLine($"Panda is asleep");
+                Console.WriteLine("Panda is asleep");
             }
         }
     }

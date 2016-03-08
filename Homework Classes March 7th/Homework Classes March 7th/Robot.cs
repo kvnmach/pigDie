@@ -9,7 +9,8 @@ namespace Homework_Classes_March_7th
 {
     public class Robot
     {
-        
+        public bool Terminator = false;
+        public bool IsShutdown = true;
 
         public string StartUp()
         {
@@ -31,19 +32,27 @@ namespace Homework_Classes_March_7th
             return "I'm a Robot";
         }
 
-        public bool Asleep { get; set; }
 
-
-        public bool IsASleep()
+        public void IsTerminator()
         {
-            return Asleep;
+            if (Terminator)
+            {
+                Console.WriteLine("I'm a terminator");
+            }
+            else
+            {
+                Console.WriteLine("I'm not a Terminator");
+            }
         }
 
-        public bool IsATerminator()
+        public void isAsleep()
         {
-            return true;
+            if (IsShutdown)
+            {
+                Console.WriteLine("ShutDown");
+            }
         }
-
+     
 
 
 
